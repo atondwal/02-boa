@@ -399,4 +399,4 @@ and check whether the output contains the relevant files.
 If this is not the first time submitting this assigmment, make sure you remove
 old copies of `02-boa.tgz` left in this directory.
 
-[lh-blog-anf]: http://goto.ucsd.edu/~rjhala/liquid/haskell/blog/blog/2016/09/05/normal-forms.lhs/
+[lh-blog-anf]: https://ucsd-progsys.github.io/liquidhaskell-blog/2016/09/01/normal-forms.lhs/
