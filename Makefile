@@ -4,7 +4,6 @@ COURSE=cs131w
 ASGN=02
 COMPILER=boa
 EXT=boa
-GROUP=group.txt
 
 ######################################################
 
@@ -51,10 +50,8 @@ distclean: clean
 tags:
 	hasktags -x -c lib/
 
-group-not-empty:
-	test "$$( find $(GROUP) -size +0c )"
 
-turnin: clean $(GROUP) group-not-empty
+turnin: clean
 	./files_to_submit.sh | tar --transform "s/^./$(ASGN)-$(COMPILER)/" -zcvf ../$(ASGN)-$(COMPILER).tgz -T -
 	mv ../$(ASGN)-$(COMPILER).tgz .
 	turnin -c $(COURSE) -p $(ASGN) ./$(ASGN)-$(COMPILER).tgz
